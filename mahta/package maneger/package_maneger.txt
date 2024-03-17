@@ -14,3 +14,8 @@ I created a project, called "my-node-project" and I modified the package.json fi
 ", then using "yarn install", react(18.0.2) was installed, the same thing could've happend using "yarn run install-packages" based on the scripts.
 by the "yarn global add live-server" or "npm install -g live-server" commands, I installed live server, adding "start: live-server" to the scripts in package.json, with "yarn start" command the project was on server:)
 this task did help me in learning about package json and package manegers and also undrestanig them a bit.
+
+what I learned later from adding .gitignore and removing the node_modules was:
+1. .gitignore must be added alongside the .git folder and not inside it.
+2. it's important to have a .gitignore for optimizing time and used space.
+3. when added .gitignore, i still had to remove the node_module folder by "git rm -r --cached node_modules" command.
