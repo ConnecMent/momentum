@@ -1,65 +1,65 @@
 //number
 
-let num1 = 10;
-let num2 = 10.5;
-let num3 = 5/0;
-let num4 = -5/0;
-let num5 =  3e5;
-let num6 = 16546453531641654694964894949498978984n;
-let num7 = "abc"/3;
+const num1 = 10;
+const num2 = 10.5;
+const num3 = 5/0;
+const num4 = -5/0;
+const num5 =  3e5;
+const num6 = 16546453531641654694964894949498978984n;
+const num7 = "abc"/3;
 
 //string
 
-let s1 = "salam 1";
-let s2 = 'salam 2';
-let s3 = `salam 3 ${5}`;
+const s1 = "salam 1";
+const s2 = 'salam 2';
+const s3 = `salam 3 ${5}`;
 
 //// M A P
 
-let m1 = new Map();
+const map = new Map();
 
 // add element;
-m1.set("ramin",123);
-m1.set("ali",456);
-m1.set("reza",789);
+map.set("ramin",123);
+map.set("ali",456);
+map.set("reza",789);
 
 // iterate from a map
-for(let [key,value] of m1){
+for(let [key,value] of map){
     console.log(key,"'s phone muber","-->",value);
 }
 
 //access element
-console.log(m1.get("ramin"));
+console.log(map.get("ramin"));
 
 //size 
-console.log(m1.size);
+console.log(map.size);
 
 //remive element
-m1.delete("ali");
-console.log(m1.size);
+map.delete("ali");
+console.log(map.size);
 
 //is exist ?
-console.log(m1.has("ahmad"));
+console.log(map.has("ahmad"));
 
 //tree method to iterate
 //_1
-for(let key of m1.keys()){
+for(let key of map.keys()){
     console.log(key);
 }
 
 //_2
-for(let value of m1.values()){
+for(let value of map.values()){
     console.log(value);
 }
 
 //_3
-for(let all of m1.entries()){
+for(let all of map.entries()){
     console.log(all[0],"--",all[1]);
 }
 
 //remove all element
-m1.clear();
-console.log(m1.size);
+map.clear();
+console.log(map.size);
 
 // WEAK MAP
 ///that's like ordinary map but there is some diffrent
@@ -85,16 +85,16 @@ s.delete(1);
 s.clear();
 
 // WEAK SET
-///that's like ordinary set but there is some diffrent
-// 1 - elements must ba an obj
-// 2 - cant't iterate from a weak set
+// 1- cant't iterate from a weak set
+// 2- WeakSet does not have size property
+// 3- WeakSet does not have clear, keys, values, entries, forEach methods.
 
 let obj1 = {}
 
-let ws = new WeakSet();
-ws.add(obj1);
-console.log(ws.has(obj1));
-ws.delete(obj1);
+const weakset = new WeakSet();
+weakset.add(obj1);
+console.log(weakset.has(obj1));
+weakset.delete(obj1);
 
 
 ///practice 
@@ -116,7 +116,7 @@ function union(s1,s2){
 
 }
 
-function intersection(s1,s2){
+function myIntersection(s1,s2){
     let res = new Set();
 
     for(let i of s1){
@@ -139,6 +139,24 @@ function diffrent(s1,s2){
     }
     return res;
 }
+
+
+
+////////////////////////////////////////
+const set1 = new Set([1, 3, 5, 7, 9]);
+const set2 = new Set([1, 4, 9]);
+console.log(set1.intersection(set2));
+
+
+const set3 = new Set([1, 3, 5, 7, 9]);
+const set4 = new Set([1, 3, 9]);
+console.log(set3.difference(set4));
+
+console.log(set3.isSubsetOf(set4));
+console.log(set3.isSupersetOf(set4));
+//////////////////////////////////////
+
+
 
 // let x = new Set([1,2,3]); 
 // let y = new Set([4,5]);
