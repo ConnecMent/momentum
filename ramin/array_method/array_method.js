@@ -31,9 +31,21 @@ array.push(3)
 //reverse
 array.reverse();
 
+const a1  = [1,2,3];
+const a2  = a1.toReversed();
+console.log(a2);
+console.log(a1);
+
+
 //---------------------------------//
 //sort
 array.sort();
+
+const s1  = ["a","c","b"];
+const s2  = s1.toSorted();
+console.log(s1);
+console.log(s2);
+
 
 //---------------------------------//
 //slice
