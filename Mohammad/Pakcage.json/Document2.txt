@@ -1,0 +1,14 @@
+Manual project dependency management is a weary task. For Node.js projects, the package.json file provides a simplified way to manage a project's metadata and dependencies.
+Every npm package and Node.js project has a package.json file with metadata for a project. The file resides in the root directory of every Node.js package and appears after running the npm init command.
+The package.json file contains descriptive and functional metadata about a project, such as a name, version, and dependencies. The file provides the npm package manager with various information to help identify the project and handle dependencies.
+The package.json file is fully customizable and looks different for every project.
+The package.json metadata fields help describe various properties of a Node.js project. The properties divide into two subtypes:
+Descriptive properties help identify a project and distinguish a package if published.
+Functional properties install and manage the project and its dependencies correctly.
+**main Property**
+The main property points to the project's entry point.
+When a Node.js application imports the package through a require statement,
+the package.json file uses the exports from the file in the main property and returns it to the application.
+**dependencies Property**
+The dependencies property is an essential field in a package.json file.
+The section maps production-level dependent packages and their versions used in the project.
