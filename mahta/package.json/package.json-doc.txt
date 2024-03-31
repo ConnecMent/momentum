@@ -1,0 +1,5 @@
+In the second task, I dived into understanding the package.json file and its key components while utilizing Yarn for managing dependencies. After initializing a new package.json file using yarn init, I explored the purpose and structure of the file.
+
+Through research, I grasped the significance of key fields within the package.json, such as name, version, dependencies, devDependencies, and scripts. I incorporated dependencies like lodash and express into the dependencies field using Yarn's yarn add command.
+
+This task deepened my understanding of dependency management with Yarn, configuring scripts, and the pivotal role of package.json in Node.js projects, but I think it would've been better if both this tasks were merged as one in the first place.
