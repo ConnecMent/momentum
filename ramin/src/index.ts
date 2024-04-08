@@ -1,17 +1,18 @@
 //Ts Basic
 
 // variable : 
-const personName:string = "ramin";
-const age:number = 18;
-const isStudent :boolean = true;
+const personName = "ramin";
+const age = 18;
+const isStudent = true;
 
-let temp: any = 10;
-temp = "salam";
-temp = true;
+
+// let temp: any = 10;
+// temp = "salam";
+// temp = true;
 
 
 // function
-function sum(num1:number,num2:number):number{
+function sum(num1:number,num2:number){
     return num1 + num2;
 }
 
@@ -24,8 +25,8 @@ greeting("ramin");
 
 
 // array
-const arr:number[] = [1,2,3];
-const arr1:string[] = ["ramin","ali","mohammad"];
+const arr = [1,2,3];
+const arr1 = ["ramin","ali","mohammad"];
 
 
 // tuple
