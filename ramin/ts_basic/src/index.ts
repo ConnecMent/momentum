@@ -16,11 +16,11 @@ function sum(num1:number,num2:number){
     return num1 + num2;
 }
 
-function greeting(name?:string):void{
+function greeting(name:string){
     console.log(`Hello ${name}`);
 }
 
-greeting();
+
 greeting("ramin");
 
 
